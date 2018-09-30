@@ -71,10 +71,8 @@
                     <ul class="main-nav nav navbar-nav navbar-right">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#service">Services</a></li>
-                        <li><a href="#pricing">Prices</a></li>
-                        <li><a href="#team">Team</a></li>
+                        <li><a href="#pricing">Advertising</a></li>
                         <li class="has-dropdown"><a href="#blog">Blog</a>
                             <ul class="dropdown">
                                 <li><a href="blog-single.html">blog post</a></li>
@@ -96,13 +94,11 @@
                         {{-- home content --}}
                         <div class="col-md-10 col-md-offset-1">
                             <div class="home-content">
-                                <h1 class="white-text">We Are Creative Agency</h1>
-                                <p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl.
-                                    Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu.
-                                    Nunc posuere.
+                                <h1 class="white-text">{{ config('app.name') }}</h1>
+                                <p class="white-text">A place for travel team players, parents and coaches to connect and grow.
                                 </p>
-                                <button class="white-btn">Get Started!</button>
-                                <button class="main-btn">Learn more</button>
+                                <button class="white-btn">Parents Login</button>
+                                <button class="main-btn">Coaches Login</button>
                             </div>
                         </div>
                         {{-- /home content --}}
@@ -126,39 +122,54 @@
 
                     {{-- Section header --}}
                     <div class="section-header text-center">
-                        <h2 class="title">Welcome to Website</h2>
+                        <h2 class="title">Welcome!</h2>
                     </div>
                     {{-- /Section header --}}
 
                     {{-- about --}}
                     <div class="col-md-4">
-                        <div class="about">
-                            <i class="fa fa-cogs"></i>
-                            <h3>Fully Customizible</h3>
-                            <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-                            <a href="#">Read more</a>
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img class="img-responsive" src="{{ asset('template/img/about1.jpg') }}" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3>Parents</h3>
+                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc
+                                    sed. Nunc non blandit massa enim nec.</p>
+                                <a href="blog-single.html">Read more</a>
+                            </div>
                         </div>
                     </div>
                     {{-- /about --}}
 
                     {{-- about --}}
                     <div class="col-md-4">
-                        <div class="about">
-                            <i class="fa fa-magic"></i>
-                            <h3>Awesome Features</h3>
-                            <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-                            <a href="#">Read more</a>
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img class="img-responsive" src="{{ asset('template/img/about2.jpg') }}" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3>Coaches</h3>
+                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc
+                                    sed. Nunc non blandit massa enim nec.</p>
+                                <a href="blog-single.html">Read more</a>
+                            </div>
                         </div>
                     </div>
                     {{-- /about --}}
 
                     {{-- about --}}
                     <div class="col-md-4">
-                        <div class="about">
-                            <i class="fa fa-mobile"></i>
-                            <h3>Fully Responsive</h3>
-                            <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-                            <a href="#">Read more</a>
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img class="img-responsive" src="{{ asset('template/img/about3.jpg') }}" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3>Advertisers</h3>
+                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc
+                                    sed. Nunc non blandit massa enim nec.</p>
+                                <a href="blog-single.html">Read more</a>
+                            </div>
                         </div>
                     </div>
                     {{-- /about --}}
@@ -172,120 +183,6 @@
         </div>
         {{-- /About --}}
 
-
-        {{-- Portfolio --}}
-        <div id="portfolio" class="section md-padding bg-grey">
-
-            {{-- Container --}}
-            <div class="container">
-
-                {{-- Row --}}
-                <div class="row">
-
-                    {{-- Section header --}}
-                    <div class="section-header text-center">
-                        <h2 class="title">Featured Works</h2>
-                    </div>
-                    {{-- /Section header --}}
-
-                    {{-- Work --}}
-                    <div class="col-md-4 col-xs-6 work">
-                        <img class="img-responsive" src="{{ asset('template/img/work1.jpg') }}" alt="">
-                        <div class="overlay"></div>
-                        <div class="work-content">
-                            <span>Category</span>
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="work-link">
-                                <a href="#"><i class="fa fa-external-link"></i></a>
-                                <a class="lightbox" href="{{ asset('template/img/work1.jpg') }}"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /Work --}}
-
-                    {{-- Work --}}
-                    <div class="col-md-4 col-xs-6 work">
-                        <img class="img-responsive" src="{{ asset('template/img/work2.jpg') }}" alt="">
-                        <div class="overlay"></div>
-                        <div class="work-content">
-                            <span>Category</span>
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="work-link">
-                                <a href="#"><i class="fa fa-external-link"></i></a>
-                                <a class="lightbox" href="{{ asset('template/img/work2.jpg') }}"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /Work --}}
-
-                    {{-- Work --}}
-                    <div class="col-md-4 col-xs-6 work">
-                        <img class="img-responsive" src="{{ asset('template/img/work3.jpg') }}" alt="">
-                        <div class="overlay"></div>
-                        <div class="work-content">
-                            <span>Category</span>
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="work-link">
-                                <a href="#"><i class="fa fa-external-link"></i></a>
-                                <a class="lightbox" href="{{ asset('template/img/work3.jpg') }}"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /Work --}}
-
-                    {{-- Work --}}
-                    <div class="col-md-4 col-xs-6 work">
-                        <img class="img-responsive" src="{{ asset('template/img/work4.jpg') }}" alt="">
-                        <div class="overlay"></div>
-                        <div class="work-content">
-                            <span>Category</span>
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="work-link">
-                                <a href="#"><i class="fa fa-external-link"></i></a>
-                                <a class="lightbox" href="{{ asset('template/img/work4.jpg') }}"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /Work --}}
-
-                    {{-- Work --}}
-                    <div class="col-md-4 col-xs-6 work">
-                        <img class="img-responsive" src="{{ asset('template/img/work5.jpg') }}" alt="">
-                        <div class="overlay"></div>
-                        <div class="work-content">
-                            <span>Category</span>
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="work-link">
-                                <a href="#"><i class="fa fa-external-link"></i></a>
-                                <a class="lightbox" href="{{ asset('template/img/work5.jpg') }}"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /Work --}}
-
-                    {{-- Work --}}
-                    <div class="col-md-4 col-xs-6 work">
-                        <img class="img-responsive" src="{{ asset('template/img/work6.jpg') }}" alt="">
-                        <div class="overlay"></div>
-                        <div class="work-content">
-                            <span>Category</span>
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="work-link">
-                                <a href="#"><i class="fa fa-external-link"></i></a>
-                                <a class="lightbox" href="{{ asset('template/img/work6.jpg') }}"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /Work --}}
-
-                </div>
-                {{-- /Row --}}
-
-            </div>
-            {{-- /Container --}}
-
-        </div>
-        {{-- /Portfolio --}}
 
         {{-- Service --}}
         <div id="service" class="section md-padding">
@@ -372,63 +269,6 @@
         {{-- /Service --}}
 
 
-        {{-- Why Choose Us --}}
-        <div id="features" class="section md-padding bg-grey">
-
-            {{-- Container --}}
-            <div class="container">
-
-                {{-- Row --}}
-                <div class="row">
-
-                    {{-- why choose us content --}}
-                    <div class="col-md-6">
-                        <div class="section-header">
-                            <h2 class="title">Why Choose Us</h2>
-                        </div>
-                        <p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat.
-                            Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque
-                            purus.</p>
-                        <div class="feature">
-                            <i class="fa fa-check"></i>
-                            <p>Quis varius quam quisque id diam vel quam elementum.</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-check"></i>
-                            <p>Mauris augue neque gravida in fermentum.</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-check"></i>
-                            <p>Orci phasellus egestas tellus rutrum.</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fa fa-check"></i>
-                            <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
-                        </div>
-                    </div>
-                    {{-- /why choose us content --}}
-
-                    {{-- About slider --}}
-                    <div class="col-md-6">
-                        <div id="about-slider" class="owl-carousel owl-theme">
-                            <img class="img-responsive" src="{{ asset('template/img/about1.jpg') }}" alt="">
-                            <img class="img-responsive" src="{{ asset('template/img/about2.jpg') }}" alt="">
-                            <img class="img-responsive" src="{{ asset('template/img/about1.jpg') }}" alt="">
-                            <img class="img-responsive" src="{{ asset('template/img/about2.jpg') }}" alt="">
-                        </div>
-                    </div>
-                    {{-- /About slider --}}
-
-                </div>
-                {{-- /Row --}}
-
-            </div>
-            {{-- /Container --}}
-
-        </div>
-        {{-- /Why Choose Us --}}
-
-
         {{-- Numbers --}}
         <div id="numbers" class="section sm-padding">
 
@@ -449,7 +289,7 @@
                         <div class="number">
                             <i class="fa fa-users"></i>
                             <h3 class="white-text"><span class="counter">451</span></h3>
-                            <span class="white-text">Happy clients</span>
+                            <span class="white-text">Parent Members</span>
                         </div>
                     </div>
                     {{-- /number --}}
@@ -459,7 +299,7 @@
                         <div class="number">
                             <i class="fa fa-trophy"></i>
                             <h3 class="white-text"><span class="counter">12</span></h3>
-                            <span class="white-text">Awards won</span>
+                            <span class="white-text">Coach Members</span>
                         </div>
                     </div>
                     {{-- /number --}}
@@ -467,19 +307,19 @@
                     {{-- number --}}
                     <div class="col-sm-3 col-xs-6">
                         <div class="number">
-                            <i class="fa fa-coffee"></i>
-                            <h3 class="white-text"><span class="counter">154</span>K</h3>
-                            <span class="white-text">Cups of Coffee</span>
+                            <i class="fa fa-users"></i>
+                            <h3 class="white-text"><span class="counter">45</span></h3>
+                            <span class="white-text">Todays Visitors</span>
                         </div>
                     </div>
                     {{-- /number --}}
-
+                    
                     {{-- number --}}
                     <div class="col-sm-3 col-xs-6">
                         <div class="number">
                             <i class="fa fa-file"></i>
-                            <h3 class="white-text"><span class="counter">45</span></h3>
-                            <span class="white-text">Projects completed</span>
+                            <h3 class="white-text"><span class="counter">154</span>K</h3>
+                            <span class="white-text">Site Posts</span>
                         </div>
                     </div>
                     {{-- /number --}}
@@ -504,7 +344,7 @@
 
                     {{-- Section header --}}
                     <div class="section-header text-center">
-                        <h2 class="title">Pricing Table</h2>
+                        <h2 class="title">Advertisement Pricing</h2>
                     </div>
                     {{-- /Section header --}}
 
@@ -655,93 +495,6 @@
         </div>
         {{-- /Testimonial --}}
 
-        {{-- Team --}}
-        <div id="team" class="section md-padding">
-
-            {{-- Container --}}
-            <div class="container">
-
-                {{-- Row --}}
-                <div class="row">
-
-                    {{-- Section header --}}
-                    <div class="section-header text-center">
-                        <h2 class="title">Our Team</h2>
-                    </div>
-                    {{-- /Section header --}}
-
-                    {{-- team --}}
-                    <div class="col-sm-4">
-                        <div class="team">
-                            <div class="team-img">
-                                <img class="img-responsive" src="{{ asset('template/img/team1.jpg') }}" alt="">
-                                <div class="overlay">
-                                    <div class="team-social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3>John Doe</h3>
-                                <span>Web Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /team --}}
-
-                    {{-- team --}}
-                    <div class="col-sm-4">
-                        <div class="team">
-                            <div class="team-img">
-                                <img class="img-responsive" src="{{ asset('template/img/team2.jpg') }}" alt="">
-                                <div class="overlay">
-                                    <div class="team-social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3>John Doe</h3>
-                                <span>Web Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /team --}}
-
-                    {{-- team --}}
-                    <div class="col-sm-4">
-                        <div class="team">
-                            <div class="team-img">
-                                <img class="img-responsive" src="{{ asset('template/img/team3.jpg') }}" alt="">
-                                <div class="overlay">
-                                    <div class="team-social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3>John Doe</h3>
-                                <span>Web Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- /team --}}
-
-                </div>
-                {{-- /Row --}}
-
-            </div>
-            {{-- /Container --}}
-
-        </div>
-        {{-- /Team --}}
-
         {{-- Blog --}}
         <div id="blog" class="section md-padding bg-grey">
 
@@ -753,7 +506,7 @@
 
                     {{-- Section header --}}
                     <div class="section-header text-center">
-                        <h2 class="title">Recents news</h2>
+                        <h2 class="title">Recents Site News</h2>
                     </div>
                     {{-- /Section header --}}
 
@@ -844,36 +597,6 @@
                     </div>
                     {{-- /Section-header --}}
 
-                    {{-- contact --}}
-                    <div class="col-sm-4">
-                        <div class="contact">
-                            <i class="fa fa-phone"></i>
-                            <h3>Phone</h3>
-                            <p>512-421-3940</p>
-                        </div>
-                    </div>
-                    {{-- /contact --}}
-
-                    {{-- contact --}}
-                    <div class="col-sm-4">
-                        <div class="contact">
-                            <i class="fa fa-envelope"></i>
-                            <h3>Email</h3>
-                            <p>email@support.com</p>
-                        </div>
-                    </div>
-                    {{-- /contact --}}
-
-                    {{-- contact --}}
-                    <div class="col-sm-4">
-                        <div class="contact">
-                            <i class="fa fa-map-marker"></i>
-                            <h3>Address</h3>
-                            <p>1739 Bubby Drive</p>
-                        </div>
-                    </div>
-                    {{-- /contact --}}
-
                     {{-- contact form --}}
                     <div class="col-md-8 col-md-offset-2">
                         <form class="contact-form">
@@ -926,7 +649,8 @@
 
                         {{-- footer copyright --}}
                         <div class="footer-copyright">
-                            <p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                            <p>Copyright © 2018. All Rights Reserved. Designed by Termialogic Solutions</p>
+                            <p class="template-link text-muted">Site template by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
                         </div>
                         {{-- /footer copyright --}}
 
